@@ -1,5 +1,20 @@
 // import { orange } from '@mui/material/colors';
 
+const colors = {
+  pumpkin: {
+    main: '#DE613D',
+    contrastText: '#fff',
+  },
+  mushroom: {
+    main: '#e8e3d9',
+    contrastText: '#000',
+  },
+  white: {
+    main: '#fff',
+    contrastText: '#000',
+  },
+};
+
 export const defaultTheme = {
   typography: {
     fontFamily: '"filson-pro",Arial,sans-serif',
@@ -43,9 +58,6 @@ export const defaultTheme = {
     secondary: {
       main: '#19857b',
     },
-    // error: {
-    //   main: red.A400,
-    // },
     // ...colors,
   },
   shape: {

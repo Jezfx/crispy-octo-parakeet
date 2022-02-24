@@ -6,5 +6,5 @@ export {
 
 export { defaultTheme } from './styles/defaultTheme';
 
+export { default as Chip } from './lib/Chip';
 export { default as Button } from './lib/Button';
-export * from './lib/shared-ui';
