@@ -4,7 +4,7 @@ import {
   ThemeProvider,
   defaultTheme,
   createTheme,
-  StyledEngineProvider,
+  StyledEngineProvider, // is needed if we use withStyles
 } from '@allplants/shared/ui';
 
 const theme = createTheme(defaultTheme);
