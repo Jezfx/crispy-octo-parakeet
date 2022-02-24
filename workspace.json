@@ -1,6 +1,8 @@
 {
   "version": 2,
   "projects": {
+    "account": "apps/account",
+    "shared-ui": "libs/shared/ui",
     "shop": "apps/shop",
     "shop-e2e": "apps/shop-e2e"
   }
