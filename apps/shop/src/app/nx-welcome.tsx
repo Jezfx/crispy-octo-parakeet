@@ -1,4 +1,4 @@
-import { Button, Chip } from '@allplants/shared/ui';
+import { Button, Chip, Test } from '@allplants/shared/ui';
 
 const icon = (
   <svg
@@ -19,6 +19,7 @@ const icon = (
 export function NxWelcome({ title }: { title: string }) {
   return (
     <>
+      <Test />
       <Button>text</Button>
       <br />
       <br />
