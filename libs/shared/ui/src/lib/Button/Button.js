@@ -14,6 +14,9 @@ const styles = {
   small: {
     fontSize: 14,
   },
+  sizeLarge: {
+    fontSize: 20,
+  },
   contained: {
     border: '2px solid #000',
     padding: '6px 14px',

@@ -15,8 +15,14 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@allplants/shared/ui": ["libs/shared/ui/src/index.ts"]
+      "@allplants/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@allplants/shop/*": ["apps/shop/src/*"]
     }
   },
-  "exclude": ["node_modules", "tmp"]
+  "exclude": ["node_modules", "tmp"],
+  "references": [
+    {
+      "path": "./apps/shop/src/"
+    }
+  ]
 }

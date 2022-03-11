@@ -1,4 +1,5 @@
-// import { orange } from '@mui/material/colors';
+import { createTheme } from '@mui/material/styles';
+import { red } from '@mui/material/colors';
 
 const colors = {
   pumpkin: {
@@ -58,12 +59,53 @@ export const defaultTheme = {
     secondary: {
       main: '#19857b',
     },
-    // ...colors,
+    error: {
+      main: red.A400,
+    },
+    ...colors,
   },
   shape: {
     borderRadius: 0,
   },
   components: {
+    MuiLink: {
+      defaultProps: {
+        color: 'inherit',
+      },
+    },
+    MuiAppBar: {
+      defaultProps: {
+        color: 'white',
+        elevation: 0,
+      },
+    },
+    MuiAccordion: {
+      styleOverrides: {
+        root: {
+          '&.Mui-expanded:before': {
+            opacity: 1,
+          },
+        },
+      },
+    },
+    MuiAccordionSummary: {
+      styleOverrides: {
+        root: {
+          marginBottom: '2px', // for the :focus boxshadow
+        },
+      },
+    },
+    MuiButtonGroup: {
+      defaultProps: {
+        disableRipple: true,
+        disableElevation: true,
+      },
+    },
+    MuiPaper: {
+      defaultProps: {
+        elevation: 0,
+      },
+    },
     MuiButtonBase: {
       defaultProps: {
         disableRipple: true,
@@ -79,5 +121,19 @@ export const defaultTheme = {
         },
       },
     },
+    MuiChip: {
+      styleOverrides: {
+        root: {
+          borderRadius: 0,
+        },
+      },
+    },
+    MuiButton: {
+      defaultProps: {
+        disableElevation: true,
+      },
+    },
   },
 };
+
+export default createTheme(defaultTheme);
